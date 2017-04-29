@@ -1,0 +1,31 @@
+img {
+    display: none;
+}
+
+span:hover + img {
+    display: block;
+}
+
+div:hover {
+	font-weight: bold;
+}
+
+body {
+	background-color: white;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+#div01 {
+	color: blue;
+}
+
+#div02 {
+	color: red;
+}
+
+#div03 {
+	color: green;
+}
