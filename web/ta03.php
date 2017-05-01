@@ -1,12 +1,13 @@
 <?php
 $cont = $_POST["cont"];
 ?>
+<!DOCTYPE html>
 <html>
 <body>
 
-Welcome!<br>
-Your name is: <?php echo $_POST["name"]; ?><br>
-Your email address is: <a href="mailto:<?php echo $_POST["email"]; ?>"><?php echo $_POST["email"]; ?><br>
+<p>Welcome!</p><br>
+<p>Your name is: <?php echo $_POST["name"]; ?></p><br>
+<p>Your email address is: <a href="mailto: "><?php echo $_POST["email"]; ?></a></p><br>
 Your major is: <?php echo $_POST["major"]; ?><br>
 You've visted the following continents:
 <ul>
