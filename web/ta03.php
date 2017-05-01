@@ -1,4 +1,5 @@
 <?php
+$email = htmlspecialchars($_POST["email"]);
 $places = $_POST["places"];
 ?>
 
@@ -8,7 +9,7 @@ $places = $_POST["places"];
 
 <p>Welcome!</p><br>
 <p>Your name is: <?php echo $_POST["name"]; ?></p><br>
-<p>Your email address is: <?php echo $_POST["email"]; ?></p><br>
+<p>Your email address is: <a href="mailto:<?=$email ?>"><?=$email ?></a></p><br>
 Your major is: <?php echo $_POST["major"]; ?><br>
 You've visted the following continents:		
 <ul>
