@@ -7,7 +7,7 @@ $cont = $_POST["cont"];
 
 <p>Welcome!</p><br>
 <p>Your name is: <?php echo $_POST["name"]; ?></p><br>
-<p>Your email address is: <a href="mailto: "><?php echo $_POST["email"]; ?></a></p><br>
+<p>Your email address is: <?php echo $_POST["email"]; ?></p><br>
 Your major is: <?php echo $_POST["major"]; ?><br>
 You've visted the following continents:
 <ul>
