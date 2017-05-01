@@ -12,7 +12,7 @@ Your major is: <?php echo $_POST["major"]; ?><br>
 You've visted the following continents:
 <ul>
 
-<?
+<?php
 foreach ($cont as $cont)
 {
 	echo "<li><p><?php echo $_POST["cont"]; ?></p></li>";
