@@ -1,5 +1,6 @@
+<?php
 $cont = $_POST["cont"];
-
+?>
 <html>
 <body>
 
