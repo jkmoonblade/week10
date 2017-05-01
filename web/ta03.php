@@ -1,6 +1,7 @@
 <?php
-$cont = $_POST["cont"];
+$places = $_POST["places"];
 ?>
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -9,18 +10,18 @@ $cont = $_POST["cont"];
 <p>Your name is: <?php echo $_POST["name"]; ?></p><br>
 <p>Your email address is: <?php echo $_POST["email"]; ?></p><br>
 Your major is: <?php echo $_POST["major"]; ?><br>
-You've visted the following continents:
+You've visted the following continents:		
 <ul>
 
-<?php
-foreach ($cont as $cont)
+<?
+foreach ($places as $place)
 {
-	echo "<li><p><?php echo $_POST["cont"]; ?></p></li>";
+	$place_clean = htmlspecialchars($place);
+	echo "<li><p>$place_clean</p></li>";
 }
 ?>		
 
 	</ul>
-
 
 Here are your comments: <?php echo $_POST["comment"]; ?><br>
 
