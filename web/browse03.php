@@ -14,7 +14,7 @@ session_start();
 <h2 align="center">Come on In!</h2>
 <p align="center">I knew you'd want to check out these sweet deals.</p>
 
-<form method="post" action="ta03.php" method="post" onsubmit="return false;">
+<form method="post" action="browse03.php" method="post">
 
 	<p>What's your favorite color?</p>
 	<input type="text" name="color"><br>
