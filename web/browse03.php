@@ -39,6 +39,9 @@ $_SESSION["favcolor"] = $_POST["color"];
 $_SESSION["items"] = $_POST["items"];
 
 echo "Favorite color is: " . $_SESSION["favcolor"];
+?>
+
+<?
 foreach ($items as $item)
 {
 	$item_clean = htmlspecialchars($item);
