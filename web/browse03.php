@@ -42,7 +42,7 @@ echo "Favorite color is: " . $_SESSION["favcolor"];
 ?>
 
 <?
-foreach ($items as $item)
+foreach ($_SESSION["items"] as $item)
 {
 	$item_clean = htmlspecialchars($item);
 	echo "<li><p>$item_clean</p></li>";
