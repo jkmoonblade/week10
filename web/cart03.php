@@ -2,7 +2,7 @@
 $color = htmlspecialchars($_POST["color"]);
 echo "Favorite color is: " . $color;
 
-
+?>
 <?
 foreach ($_SESSION["items"] as $item)
 {
