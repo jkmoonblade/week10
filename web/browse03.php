@@ -1,6 +1,7 @@
 <?php
 // Start the session
 session_start();
+$_SESSION['userName'] = 'Root';
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,7 @@ session_start();
 <p>I knew you'd want to check out these sweet deals.</p>
 </div>
 
-<form method="post" action="browse03.php" method="post">
+<form method="post" action="browse03.php">
 
 	<p>What's your favorite color?</p>
 	<input type="text" name="color"><br>
