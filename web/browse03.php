@@ -34,6 +34,8 @@ session_start();
 </form>
 
 
+<a href="cart03.php">View your Cart</a>
+
 <?php 
 $_SESSION["favcolor"] = $_POST["color"]; 
 $_SESSION["items"] = $_POST["items"];
