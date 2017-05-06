@@ -6,6 +6,7 @@ $_SESSION['userName'] = 'Root';
 
 <!DOCTYPE html>
 <html>
+<title>Week03 Prove Assignment</title>
 <body>
 
 <div align="center">
@@ -36,6 +37,7 @@ $_SESSION['userName'] = 'Root';
 
 
 <a href="cart03.php">View your Cart</a>
+<br>
 
 <?php 
 $_SESSION["favcolor"] = $_POST["color"]; 
