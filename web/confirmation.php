@@ -10,6 +10,17 @@ $zip = htmlspecialchars($_POST["zip"]);
 <!DOCTYPE html>
 <html>
 <title>Week03 Prove Assignment</title>
+<style>
+body {
+	background-color: white;
+	margin-right: 50px;
+    margin-left: 50px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+</style>
 <body>
 
 <p>Here are the items you purchase:</p>

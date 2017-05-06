@@ -5,6 +5,17 @@ session_start();
 <!DOCTYPE html>
 <html>
 <title>Week03 Prove Assignment</title>
+<style>
+body {
+	background-color: white;
+	margin-right: 50px;
+    margin-left: 50px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+</style>
 <body>
 
 <p>Here are the items in your cart currently from your last submission:</p>
