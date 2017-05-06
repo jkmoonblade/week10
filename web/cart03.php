@@ -19,8 +19,8 @@ foreach ($_SESSION["items"] as $item)
 <p>Would you like to remove any of them?</p>
 <p>Of course you don't.</p>
 <br>
-<a href="checkout.php">Return to Browse</a>
-
+<a href="browse03.php">Return to Browse</a>
+<br>
 <br>
 <a href="checkout.php">Continue to Checkout</a>
 <br>

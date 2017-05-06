@@ -9,6 +9,19 @@ session_start();
 <body>
 
 <form method="post" action="confirmation.php">
+Street Address: <input type="text" name="street"><br>
+City: <input type="text" name="city"><br>
+State: <input type="text" name="state"><br>
+ZIP:<input type="text" name="zip"><br>
+<p>Confirm your purchase</p>
+
+<?php 
+$_SESSION["street"] = $_POST["street"]; 
+$_SESSION["city"] = $_POST["city"];
+$_SESSION["state"] = $_POST["state"];
+$_SESSION["zip"] = $_POST["zip"];
+
+?>
 
 <input type="submit">
 
