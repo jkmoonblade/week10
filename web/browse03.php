@@ -30,7 +30,7 @@ $_SESSION['userName'] = 'Root';
 	<input type="checkbox" name="items[]" value="Forks">Forks
 	<input type="checkbox" name="items[]" value="Couch">Couch
 	<input type="checkbox" name="items[]" value="Free Healthcare">Free Healthcare
-	<input type="checkbox" name="items[]" value="Hope">Hope<br>
+	<input type="checkbox" name="items[]" value="Hope">Hope<br><br>
 
 <input type="submit">
 </form>

@@ -17,8 +17,6 @@ foreach ($_SESSION["items"] as $item)
 }
 ?>
 <p>Would you like to remove any of them?</p>
-<p>Of course you don't.</p>
-<br>
 <a href="browse03.php">Return to Browse</a>
 <br>
 <br>
