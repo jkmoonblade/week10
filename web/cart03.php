@@ -1,6 +1,7 @@
 <?php
-echo "Favorite color is: " . $_SESSION["favcolor"];
-?>
+$color = htmlspecialchars($_POST["color"]);
+echo "Favorite color is: " . $color;
+
 
 <?
 foreach ($_SESSION["items"] as $item)
