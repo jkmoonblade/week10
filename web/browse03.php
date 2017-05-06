@@ -38,22 +38,14 @@ $_SESSION['userName'] = 'Root';
 
 <a href="cart03.php">View your Cart</a>
 <br>
-
+<br>
 <?php 
 $_SESSION["favcolor"] = $_POST["color"]; 
 $_SESSION["items"] = $_POST["items"];
 
 echo "Favorite color is: " . $_SESSION["favcolor"];
 ?>
-
-<?
-foreach ($_SESSION["items"] as $item)
-{
-	$item_clean = htmlspecialchars($item);
-	echo "<p>$item_clean</p>";
-}
-?>
-
+<br>
 <p>*  You will be required to pay for items when they arrive on your doorstep.</p>
 <p>** You are responible for shipping and handling fees.</p>
 

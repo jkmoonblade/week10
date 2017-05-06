@@ -5,7 +5,7 @@ session_start();
 $street = htmlspecialchars($_POST["street"]);
 $city = htmlspecialchars($_POST["city"]);
 $state = htmlspecialchars($_POST["state"]);
-$address = htmlspecialchars($_POST["address"]);
+$zip = htmlspecialchars($_POST["zip"]);
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,7 +27,7 @@ foreach ($_SESSION["items"] as $item)
 <br>
 
 <?php 
-	echo $street . ", " . $city . " " . $state .  ", " . $address;
+	echo $street . ", " . $city . " " . $state .  ", " . $zip;
 ?>
 
 </body>
