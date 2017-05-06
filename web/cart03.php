@@ -1,12 +1,6 @@
 <?php
 
-session_start();
-if(isset($_SESSION['userName'])) {
-  echo "Your session is running " . $_SESSION['userName'];
-  
-$color = htmlspecialchars($_POST["color"]);
-echo "Favorite color is: " . $color;
-
+session_start(); 
 ?>
 <?
 foreach ($_SESSION["items"] as $item)
