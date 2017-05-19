@@ -6,7 +6,7 @@ try
 {
   $user = 'postgres';
   $password = 's22554';
-  $db = new PDO('pgsql:host=127.0.0.1;dbname=project1', $user, $password);
+  $db = new PDO('pgsql:host=localhost;dbname=project1', $user, $password);
 }
 catch (PDOException $ex)
 {
