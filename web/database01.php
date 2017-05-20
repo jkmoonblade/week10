@@ -27,33 +27,13 @@ catch (PDOException $ex) {
  die();
 }
 
-echo 'Here is a list of the current public.user table: ' . '<br/>';
-
-$statement = $db->query('SELECT username, password FROM public.user');
-while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-{
-  echo 'user: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
-}
-
-$statement = $db->query('SELECT name, level, trainer FROM public.pokemon');
-while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-{
-  echo 'name: ' . $row['name'] . ' level: ' . $row['level'] . ' trainer#: ' . $row['trainer'] . '<br/>';
-}
-
-$statement = $db->query('SELECT pokemon_id, attack1, attack2 FROM public.attacks');
-while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-{
-  echo 'Pokemon ID: ' . $row['pokemon_id'] . ' attack 1: ' . $row['attack1'] . ' attack 2: ' . $row['attack2'] . '<br/>';
-}
-
-
-
 ?>
+
+<h1 align="center">Joe's Pokemon Database!</h1>
 
 <p>The purpose of this database is to store pokemon for trainers online. In it's current state, the user cannot enter in data and search, but I have provided links for you to see the progress of the database. I have entered in some data into it already.</p>
 
-<br><br>
+<br>
 
 <p>This link will take you to a page that will display to you all the users with pokemon in my database</p>
 <a href="database02.php">Users</a>

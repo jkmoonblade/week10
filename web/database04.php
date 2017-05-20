@@ -30,7 +30,7 @@ catch (PDOException $ex) {
 $statement = $db->query('SELECT pokemon_id, attack1, attack2 FROM public.attacks');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-  echo 'Pokemon ID: ' . $row['pokemon_id'] . ' attack 1: ' . $row['attack1'] . ' attack 2: ' . $row['attack2'] . '<br/>';
+  echo 'Pokemon ID: ' . $row['pokemon_id'] . '<br/>' . ' Attack 1: ' . $row['attack1'] . '<br/>' . ' Attack 2: ' . $row['attack2'] . '<br/>' . '<br/>';
 }
 
 ?>

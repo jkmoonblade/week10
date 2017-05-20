@@ -32,7 +32,7 @@ echo 'Here is a list of the current public.user table: ' . '<br/>';
 $statement = $db->query('SELECT username, password FROM public.user');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-  echo 'user: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
+  echo 'User: ' . $row['username'] . '<br/>' . ' Password: ' . $row['password'] . '<br/>' . '<br/>';
 }
 
 ?>
