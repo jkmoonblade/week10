@@ -4,18 +4,9 @@ session_start();
 
 try
 {
-  	$dbUrl = getenv('DATABASE_URL');
-
-	$dbopts = parse_url($dbUrl);
-
-	$dbHost = $dbopts["host"];
-	$dbPort = $dbopts["port"];
-	$dbUser = $dbopts["user"];
-	$dbPassword = $dbopts["pass"];
-	$dbName = "project1";
-	//$dbName = ltrim($dbopts["path"],'/');
-
-	$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+  	$user = 'postgres';
+  	$password = 's22554';
+ 	$db = new PDO('pgsql:host=127.0.0.1;dbname=project1', $user, $password);
 }
 catch (PDOException $ex)
 {
