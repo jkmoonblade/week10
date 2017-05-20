@@ -22,6 +22,6 @@ catch (PDOException $ex)
   die();
 }
 
-echo "Connected!";
+echo "Connected to " . $dbName;
 
 ?>
