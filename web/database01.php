@@ -51,6 +51,16 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 
 ?>
 
+<p>The purpose of this database is to store pokemon for trainers online. In it's current state, the user cannot enter in data and search, but I have provided links for you to see the progress of the database. I have entered in some data into it already.</p>
+
+<br><br>
+
+<p>This link will take you to a page that will display to you all the users with pokemon in my database</p>
+<a href="database02.php">Users</a>
+<p>This link will take you to a page that will display to you all the pokemon that are currently stored in my database</p>
+<a href="database03.php">Pokemon</a>
+<p>This link will take you to a page that will display the pokemon's ID number and the attacks associated with that pokemon.</p>
+<a href="database04.php">Attacks</a>
+
 </body>
 </html>
-?>
