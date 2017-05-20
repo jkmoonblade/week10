@@ -12,7 +12,7 @@ try
 	$dbPort = $dbopts["port"];
 	$dbUser = $dbopts["user"];
 	$dbPassword = $dbopts["pass"];
-	$dbName = 'project1';
+	$dbName = "project1";
 	//$dbName = ltrim($dbopts["path"],'/');
 
 	$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
