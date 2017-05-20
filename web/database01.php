@@ -13,15 +13,11 @@ if (empty($dbUrl)) {
 
 $dbopts = parse_url($dbUrl);
 
-print "<p>$dbUrl</p>\n\n";
-
 $dbHost = $dbopts["host"];
 $dbPort = $dbopts["port"];
 $dbUser = $dbopts["user"];
 $dbPassword = $dbopts["pass"];
 $dbName = ltrim($dbopts["path"],'/');
-
-print "<p>pgsql:host=$dbHost;port=$dbPort;dbname=$dbName</p>\n\n";
 
 try {
  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
@@ -31,11 +27,26 @@ catch (PDOException $ex) {
  die();
 }
 
+echo 'Here is a list of the current public.user table: ' . '<br/>';
+
 $statement = $db->query('SELECT username, password FROM public.user');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
   echo 'user: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
 }
+
+$statement = $db->query('SELECT name, level, trainer FROM public.pokemon');
+while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+{
+  echo 'name: ' . $row['name'] . ' level: ' . $row['level'] . ' trainer#: ' . $row['trainer'] . '<br/>';
+}
+
+$statement = $db->query('SELECT pokemon_id, attack1, attack2 FROM public.attacks');
+while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+{
+  echo 'Pokemon ID: ' . $row['pokemon_id'] . ' attack 1: ' . $row['attack1'] . ' attack 2: ' . $row['attack2'] . '<br/>';
+}
+
 
 
 ?>
