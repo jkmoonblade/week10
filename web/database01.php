@@ -22,4 +22,6 @@ catch (PDOException $ex)
   die();
 }
 
+echo "Connected!";
+
 ?>
