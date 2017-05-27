@@ -30,10 +30,10 @@ catch (PDOException $ex) {
  die();
 }
 
-$statement = $db->query('SELECT name, level, trainer FROM public.pokemon');
+$statement = $db->query('SELECT name, level FROM public.pokemon');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-  echo 'Name: ' . $row['name'] . '<br/>' . ' Level: ' . $row['level'] . '<br/>' . ' Trainer#: ' . $row['trainer'] . '<br/>' . '<br/>';
+  echo 'Name: ' . $row['name'] . '<br/>' . ' Level: ' . $row['level'] . '<br/>' . '<br/>';
 }
 
 ?>
