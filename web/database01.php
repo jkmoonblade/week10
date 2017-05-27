@@ -80,12 +80,28 @@ try {
 	$statement->bindValue(':password', $_SESSION["password"]);
 	$statement->execute();
 
+}
+catch (Exception $ex){
+	echo "Error with DB. Details: $ex";
+	die();
+}
+
+try {
+
 	$query = 'INSERT INTO public.pokemon(name, level) VALUES(:pokemon, :level)';
 	$statement = $db->prepare($query);
 
 	$statement->bindValue(':pokemon', $_SESSION["pokemon"]);
 	$statement->bindValue(':level', $_SESSION["level"]);
 	$statement->execute();
+
+}
+catch (Exception $ex){
+	echo "Error with DB. Details: $ex";
+	die();
+}
+
+try {
 
 	$query = 'INSERT INTO public.attacks(attack1, attacl2) VALUES(:firstAttack, :secondAttack)';
 	$statement = $db->prepare($query);
@@ -98,7 +114,6 @@ catch (Exception $ex){
 	echo "Error with DB. Details: $ex";
 	die();
 }
-
 
 ?>
 
