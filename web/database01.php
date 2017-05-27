@@ -80,34 +80,24 @@ try {
 	$statement->bindValue(':password', $_SESSION["password"]);
 	$statement->execute();
 
-}
-catch (Exception $ex){
-	echo "Error with DB. Details: $ex";
-	die();
-}
+	$userId = $db->lastInsertId("public.user_id_seq");
 
-try {
-
-	$query = 'INSERT INTO public.pokemon(name, level) VALUES(:pokemon, :level)';
+	$query = 'INSERT INTO public.pokemon(name, level, trainer) VALUES(:name, :level, :trainer)';
 	$statement = $db->prepare($query);
 
-	$statement->bindValue(':pokemon', $_SESSION["pokemon"]);
+	$statement->bindValue(':name', $_SESSION["pokemon"]);
 	$statement->bindValue(':level', $_SESSION["level"]);
+	$statement->bindValue(':trainer', $userId);
 	$statement->execute();
 
-}
-catch (Exception $ex){
-	echo "Error with DB. Details: $ex";
-	die();
-}
+	$pokemonId = $db->lastInsertId("public.pokemon_id_seq");
 
-try {
-
-	$query = 'INSERT INTO public.attacks(attack1, attacl2) VALUES(:firstAttack, :secondAttack)';
+	$query = 'INSERT INTO public.attacks(pokemon_id, attack1, attack2) VALUES(:pokemon_id, :attack1, :attack2)';
 	$statement = $db->prepare($query);
 
-	$statement->bindValue(':firstAttack', $_SESSION["firstAttack"]);
-	$statement->bindValue(':secondAttack', $_SESSION["secondAttack"]);
+	$statement->bindValue(':pokemon_id', $pokemonId);
+	$statement->bindValue(':attack1', $_SESSION["firstAttack"]);
+	$statement->bindValue(':attack2', $_SESSION["secondAttack"]);
 	$statement->execute();
 }
 catch (Exception $ex){
