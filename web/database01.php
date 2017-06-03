@@ -1,4 +1,16 @@
 <html>
+<title>Pokemon Database</title>
+<style>
+body {
+	background-color: white;
+	margin-right: 50px;
+    margin-left: 50px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+</style>
 <body>
 
 <?php
@@ -106,6 +118,8 @@ catch (Exception $ex){
 }
 
 ?>
+
+
 
 <p>This link will take you to a page that will display to you all the users with pokemon in my database</p>
 <a href="database02.php">Users</a>

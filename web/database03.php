@@ -1,4 +1,16 @@
 <html>
+<title>Pokemon Database</title>
+<style>
+body {
+	background-color: white;
+	margin-right: 50px;
+    margin-left: 50px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+</style>
 <body>
 
 <?php
