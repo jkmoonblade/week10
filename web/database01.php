@@ -2,7 +2,7 @@
 <title>Pokemon Database</title>
 <style>
 body {
-	background-color: white;
+	background-image: url("https://ak6.picdn.net/shutterstock/videos/3895421/thumb/3.jpg");
 	margin-right: 50px;
     margin-left: 50px;
 }
@@ -45,7 +45,7 @@ catch (PDOException $ex) {
 
 <h1 align="center">Joe's Pokemon Database!</h1>
 
-<div>
+<div align="center">
 <img src="http://pre12.deviantart.net/f24e/th/pre/i/2012/340/d/a/pikachu_sleeping_by_jackspade2012-d5na29l.jpg" alt="Pikachu" style="width:304px;height:228px;">
 </div>
 
