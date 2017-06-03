@@ -2,7 +2,7 @@
 <title>Pokemon Database</title>
 <style>
 body {
-	background-image: url("https://ak6.picdn.net/shutterstock/videos/3895421/thumb/3.jpg");
+	background-image: url("http://hanksrepublic.com/wp-content/uploads/2017/05/inspiring-simple-background-blue-hd-desktop-wallpaper-high-definition.jpg");
 	margin-right: 50px;
     margin-left: 50px;
 }
