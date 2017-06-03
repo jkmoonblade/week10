@@ -45,6 +45,10 @@ catch (PDOException $ex) {
 
 <h1 align="center">Joe's Pokemon Database!</h1>
 
+<div>
+<img src="http://pre12.deviantart.net/f24e/th/pre/i/2012/340/d/a/pikachu_sleeping_by_jackspade2012-d5na29l.jpg" alt="Pikachu" style="width:304px;height:228px;">
+</div>
+
 <p>The purpose of this database is to store pokemon for trainers online. In it's current state, the user cannot enter in data and search, but I have provided links for you to see the progress of the database. I have entered in some data into it already.</p>
 
 <br>
