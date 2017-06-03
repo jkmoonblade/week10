@@ -131,6 +131,9 @@ catch (Exception $ex){
 <a href="database03.php">Pokemon</a>
 <p>This link will take you to a page that will display the pokemon's ID number and the attacks associated with that pokemon.</p>
 <a href="database04.php">Attacks</a>
+<br>
+<br>
+<p>Please contact me at keene.josepholiver@gmail.com with any questions or concerns!
 
 </body>
 </html>

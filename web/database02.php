@@ -2,7 +2,7 @@
 <title>Pokemon Database</title>
 <style>
 body {
-	background-color: white;
+	background-image: url("http://www.powerpointhintergrund.com/uploads/2017/05/simple-background-reprise-by-hexdef101-on-deviantart-11.png");
 	margin-right: 50px;
     margin-left: 50px;
 }
@@ -13,6 +13,7 @@ h1, h2 {
 </style>
 <body>
 
+<h1>Current Users</h1>
 <?php
 
 session_start();

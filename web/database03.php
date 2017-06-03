@@ -2,7 +2,7 @@
 <title>Pokemon Database</title>
 <style>
 body {
-	background-color: white;
+	background-image: url("http://hanksrepublic.com/wp-content/uploads/2017/05/inspiring-simple-background-blue-hd-desktop-wallpaper-high-definition.jpg");
 	margin-right: 50px;
     margin-left: 50px;
 }
@@ -13,6 +13,7 @@ h1, h2 {
 </style>
 <body>
 
+<h1>Current Pokemon</h1>
 <?php
 
 session_start();
